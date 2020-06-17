@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/humidity-service/humidity-service.iml" filepath="$PROJECT_DIR$/humidity-service/humidity-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/temp-service/temp-service.iml" filepath="$PROJECT_DIR$/temp-service/temp-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weather-service/weather-service.iml" filepath="$PROJECT_DIR$/weather-service/weather-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wind-service/wind-service.iml" filepath="$PROJECT_DIR$/wind-service/wind-service.iml" />
+    </modules>
+  </component>
+</project>

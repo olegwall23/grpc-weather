@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package com.example.grpc.weather;
+
+message Coordinates {
+    float lat = 1;
+    float lon = 2;
+}
+
+message Humidity {
+    string result = 1;
+}
+
+message Temp {
+    string result = 1;
+}
+
+message Wind {
+    string result = 1;
+}
+
+message Weather {
+    Humidity humidity = 1;
+    Temp temp = 2;
+    Wind wind = 3;
+}
+
+service WeatherService {
+    rpc getCurrent(Coordinates) returns (Weather);
+}
+
+service HumidityService {
+    rpc getCurrent(Coordinates) returns (Humidity);
+}
+
+service TempService {
+    rpc getCurrent(Coordinates) returns (Temp);
+}
+
+service WindService {
+    rpc getCurrent(Coordinates) returns (Wind);
+}
